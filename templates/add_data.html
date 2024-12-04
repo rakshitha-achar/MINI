@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}add_data page{% endblock %}
+{% block content %}
+<form method="POST" action="/submit">
+    <!-- Author Information -->
+    <label for="UserID" class="form-label">User ID:</label>
+    <input type="text" id="UserID" name="UserID" required><br>
+
+    <label for="age">Person age:</label>
+    <input type="age" id="age" name="age" required><br>
+
+    <label for="gender">gender :</label>
+    <input type="text" id="gender" name="gender" required><br>
+
+    <label for="UserBehaviorClass">UserBehaviorClass:</label>
+     <input type="text" id="UserBehaviorClass" name="UserBehaviorClass" required><br>
+
+
+
+
+
+
+
+    <label for="DeviceModel" class="form-label">Device Model :</label>
+    <input type="text" id="DeviceModel" name="DeviceModel" required><br>
+
+    <label for="OperatingSystem">Operating System :</label>
+    <input type="text" id="OperatingSystem" name="OperatingSystem" required><br>
+
+    <label for=" AppUsageTime"> App Usage Time :</label>
+    <input type="text" id=" AppUsageTime" name=" AppUsageTime" required><br>
+
+    <label for="NumberofAppsInstalled"> Number of Apps Installed:</label>
+    <input type="text" id="NumberofAppsInstalled" name="NumberofAppsInstalled" required><br>
+
+    <!-- Blog Information -->
+    <label for="ScreenOnTime"> Screen On Time:</label>
+    <input type="text" id="ScreenOnTime" name="ScreenOnTime" required><br>
+
+
+
+    <label for="BatteryDrain"> Battery Drain:</label>
+    <input type="text" id="BatteryDrain" name="BatteryDrain" required><br>
+
+    <label for="DataUsage"> Data Usage:</label>
+    <input type="text" id="DataUsage" name="DataUsage" required><br>
+
+
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

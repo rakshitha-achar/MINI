@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Mobile Device Usage & User Behaviour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq {
+            margin-top: 20px;
+        }
+        .faq button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .faq button:hover {
+            background-color: #444;
+        }
+        .faq div {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        function toggleFAQ(faqId) {
+            var faqContent = document.getElementById(faqId);
+            if (faqContent.style.display === "block") {
+                faqContent.style.display = "none";
+            } else {
+                faqContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="help.html">Help</a>
+    </nav>
+
+    <section>
+        <h1>Help</h1>
+        <p>If you need assistance or have questions about the data on mobile device usage and user behavior, please check the frequently asked questions below:</p>
+
+        <div class="faq">
+            <button onclick="toggleFAQ('faq1')">What data is collected about mobile device usage?</button>
+            <div id="faq1">
+                <p>We collect information such as screen time, app usage, battery consumption, and user interaction patterns.</p>
+            </div>
+
+            <button onclick="toggleFAQ('faq2')">How can I interpret the user behavior data?</button>
+            <div id="faq2">
+                <p>User behavior data is visualized through charts and graphs showing time spent on specific tasks, app usage frequency, and interaction trends.</p>
+            </div>
+
+            <button onclick="toggleFAQ('faq3')">Is the collected data anonymous?</button>
+            <div id="faq3">
+                <p>Yes, all data is anonymized to ensure user privacy and is aggregated to prevent identifying individuals.</p>
+            </div>
+
+            <button onclick="toggleFAQ('faq4')">How can I contribute data to the study?</button>
+            <div id="faq4">
+                <p>You can contribute data by signing up through our platform and granting consent for anonymized data collection.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
